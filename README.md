@@ -23,3 +23,8 @@ kubectl expose deployment hello-web --type=LoadBalancer --port 80 --target-port 
 
 kubectl get service
 
+------------
+2019-09-23 18:18:38.208312 W | etcdserver: read-only range request "key:\"/registry/clusterroles\" range_end:\"/registry/clusterrolet\" count_only:true " with result "range_response_count:0 size:7" took too long (399.793294ms) to execute
+2019-09-23 18:18:38.208697 W | etcdserver: read-only range request "key:\"/registry/mutatingwebhookconfigurations\" range_end:\"/registry/mutatingwebhookconfigurationt\" count_only:true " with result "range_response_count:0 size:5" took too long (563.453292ms) to execute
+2019-09-23 18:19:32.514510 W | etcdserver: read-only range request "key:\"/registry/serviceaccounts\" range_end:\"/registry/serviceaccountt\" count_only:true " with result "range_response_count:0 size:7" took too long (506.038583ms) to execute
+2019-09-23 18:19:32.514898 W | etcdserver: read-only range request "key:\"/registry/services/endpoints/kube-system/kube-controller-manager\" " with result "range_response_count:1 size:457" took too long (101.596517ms) to execute
